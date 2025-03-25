@@ -1,41 +1,51 @@
 import { FaInfoCircle } from "react-icons/fa";
+import Image from "next/image";
 
 const Herosection = () => {
   return (
-    <div className="relative w-full h-screen bg-gray-900 overflow-hidden">
-      <img
+    <div className="relative w-full h-[70vh] md:h-screen bg-gray-900 overflow-hidden">
+      {/* Hero Background Image with next/image */}
+      <Image
         src="/images/Rectangle 9.png"
         alt="Hero Background"
-        className="absolute inset-0 w-screen h-screen object-cover opacity-70"
+        layout="fill"
+        objectFit="cover"
+        className="opacity-70"
+        priority // Add priority for above-the-fold images
       />
-      <div className="relative z-10 flex flex-col justify-center h-full px-8 md:px-16 lg:px-24 bg-black bg-opacity-40">
-        <div className="max-w-2xl w-full mb-10 mt-20">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
+
+      <div className="relative z-10 flex flex-col justify-end md:justify-center h-full px-4 md:px-16 lg:px-24 bg-black bg-opacity-40 pb-8 md:pb-0">
+        <div className="max-w-2xl w-full mb-6 md:mb-10 mt-0 md:mt-20">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-3 md:mb-4">
             Duty After School
           </h1>
-          <p className="text-lg md:text-xl text-gray-300">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 line-clamp-3 md:line-clamp-none">
             Sebuah benda tak dikenal mengambil alih dunia dalam keputusasaan,
             Departemen Pertahanan mulai merekrut lebih banyak tentara, termasuk
             siswa sekolah menengah, Mereka pun segera menjadi pejuang garis
             depan dalam perang
           </p>
         </div>
-        <div className="w-full flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            <button className="px-6 py-3 bg-[#192DB7] text-white font-semibold rounded-full">
+
+        <div className="w-full flex flex-col md:flex-row items-start md:items-center justify-between gap-4 md:gap-0">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 w-full md:w-auto">
+            <button className="px-4 py-2 sm:px-6 sm:py-3 bg-[#192DB7] text-white font-semibold rounded-full text-sm sm:text-base w-full sm:w-auto text-center">
               Mulai
             </button>
-            <div className="flex items-center gap-2">
-              <button className="px-8 py-3 bg-[#22282A] text-white font-semibold rounded-full flex items-center ">
-                <FaInfoCircle className="text-white mr-1" />
+            <div className="flex items-center gap-2 w-full sm:w-auto">
+              <button className="px-4 py-2 sm:px-6 sm:py-3 bg-[#22282A] text-white font-semibold rounded-full flex items-center justify-center text-sm sm:text-base w-full sm:w-auto">
+                <FaInfoCircle className="text-white mr-1 sm:mr-2" />
                 <span>Selengkapnya</span>
               </button>
-              <div className="w-14 h-12 ml-1 rounded-full bg-black bg-opacity-60 border border-white flex items-center justify-center">
-                <span className="text-white font-bold text-sm">18+</span>
+              <div className="w-10 h-8 sm:w-14 sm:h-12 ml-1 rounded-full bg-black bg-opacity-60 border border-white flex items-center justify-center shrink-0">
+                <span className="text-white font-bold text-xs sm:text-sm">
+                  18+
+                </span>
               </div>
             </div>
           </div>
-          <div className="flex items-center">
+
+          <div className="hidden md:flex items-center">
             <button className="w-10 h-10 rounded-full bg-transparent flex items-center justify-center border-white border-2 relative">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
