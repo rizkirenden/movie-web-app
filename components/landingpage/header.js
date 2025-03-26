@@ -8,14 +8,10 @@ const Header = () => {
 
   return (
     <div>
-      {/* Main Header Section */}
       <div className="bg-[#181A1C] w-full h-[70px] md:h-[94px] px-4 md:px-10 py-4">
         <div className="w-full flex items-center justify-between">
-          {/* Left Section - Logo & Menu */}
           <div className="flex items-center gap-4 md:gap-6">
-            {/* Logo - Different for mobile and desktop */}
             <div className="flex items-center">
-              {/* Mobile Logo - Hidden on desktop */}
               <Image
                 src="/images/setmobile.png"
                 alt="logo"
@@ -24,7 +20,6 @@ const Header = () => {
                 className="md:hidden"
               />
 
-              {/* Desktop Logo - Hidden on mobile */}
               <Image
                 src="/images/logo.png"
                 alt="logo"
@@ -34,7 +29,6 @@ const Header = () => {
               />
             </div>
 
-            {/* Menu Items - Always visible horizontally */}
             <div className="flex items-center gap-4 md:gap-6 lg:gap-8">
               <a
                 href="#"
@@ -57,7 +51,6 @@ const Header = () => {
             </div>
           </div>
 
-          {/* Right Section - Avatar */}
           <div className="relative">
             <div
               className="flex items-center space-x-2 cursor-pointer"
@@ -88,7 +81,6 @@ const Header = () => {
               </svg>
             </div>
 
-            {/* Dropdown Menu */}
             {dropdownOpen && (
               <div className="absolute right-0 mt-2 w-48 bg-[#2D2F31] rounded-md shadow-lg py-1 z-50">
                 <a

@@ -13,13 +13,10 @@ const Toprating = () => {
       setIsMobile(window.innerWidth < 768);
     };
 
-    // Set initial value
     handleResize();
 
-    // Add event listener
     window.addEventListener("resize", handleResize);
 
-    // Clean up
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
@@ -86,7 +83,6 @@ const Toprating = () => {
                   height={isMobile ? 225 : 162}
                   className="object-cover w-full h-full rounded-t-lg"
                 />
-                {/* Positioning the title at the top */}
                 {movie.title && (
                   <h5 className="absolute top-1 md:top-2 left-1 md:left-2 text-[10px] md:text-xs font-semibold rounded-full bg-blue-500 text-white m-1 md:m-2 p-0.5 md:p-1">
                     {movie.title}

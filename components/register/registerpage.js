@@ -20,7 +20,6 @@ const Registerpage = () => {
       style={{ backgroundImage: "url('/images/register.jpeg')" }}
     >
       <div className="bg-[#181A1C] bg-opacity-80 p-6 md:p-8 rounded-lg shadow-lg flex flex-col justify-center items-center w-full md:max-w-md lg:w-1/3 xl:w-1/4">
-        {/* Logo with responsive sizing */}
         <div className="relative w-20 h-20 md:w-24 md:h-24">
           <Image
             src={"/images/logo.png"}
@@ -36,7 +35,6 @@ const Registerpage = () => {
         </h5>
         <p className="text-white mb-3 md:mb-4">Selamat datang !</p>
 
-        {/* Username Field */}
         <div className="w-full mb-3 md:mb-4">
           <label htmlFor="username" className="text-white block mb-1 md:mb-2">
             Username
@@ -49,7 +47,6 @@ const Registerpage = () => {
           />
         </div>
 
-        {/* Password Field */}
         <div className="w-full mb-3 md:mb-4 relative">
           <label htmlFor="password" className="text-white block mb-1 md:mb-2">
             Password
@@ -93,7 +90,6 @@ const Registerpage = () => {
           </div>
         </div>
 
-        {/* Confirm Password Field */}
         <div className="w-full mb-3 md:mb-4 relative">
           <label
             htmlFor="confirmPassword"
@@ -140,7 +136,6 @@ const Registerpage = () => {
           </div>
         </div>
 
-        {/* Login Link - Maintains alignment */}
         <div className="flex justify-end w-full text-white mb-3 md:mb-4">
           <span className="text-sm">
             Sudah Punya Akun?
@@ -153,7 +148,6 @@ const Registerpage = () => {
           </span>
         </div>
 
-        {/* Buttons */}
         <button className="w-full bg-[#3D4142] text-white py-2 rounded-full mt-2 md:mt-4 mb-2 hover:bg-blue-600 text-sm md:text-base">
           Daftar
         </button>

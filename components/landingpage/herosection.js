@@ -4,7 +4,6 @@ import Image from "next/image";
 const Herosection = () => {
   return (
     <div className="relative w-full h-[70vh] md:h-screen bg-gray-900 overflow-hidden">
-      {/* Hero Background Image with next/image */}
       <Image
         src="/images/Rectangle 9.png"
         alt="Hero Background"
@@ -43,7 +42,6 @@ const Herosection = () => {
             </div>
           </div>
 
-          {/* Volume button - now aligned horizontally */}
           <button className="w-10 h-10 rounded-full bg-transparent flex items-center justify-center border-white border-2 flex-shrink-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"

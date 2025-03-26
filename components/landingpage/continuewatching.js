@@ -9,7 +9,6 @@ const Continuewatching = () => {
   const scrollRef = useRef(null);
 
   useEffect(() => {
-    // Set initial window width
     setWindowWidth(window.innerWidth);
 
     const handleResize = () => {
@@ -24,7 +23,6 @@ const Continuewatching = () => {
     const container = scrollRef.current;
     if (!container) return;
 
-    // Calculate card width based on screen size
     const cardWidth = windowWidth < 768 ? 280 : 302;
     const gap = windowWidth < 768 ? 16 : 24;
     const scrollAmount = cardWidth + gap;
@@ -41,7 +39,6 @@ const Continuewatching = () => {
     setScrollPosition(newPosition);
   };
 
-  // Calculate card width based on screen size
   const cardWidth = windowWidth < 768 ? 280 : 302;
   const cardHeight = windowWidth < 768 ? 150 : 162;
   const maxScroll =

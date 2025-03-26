@@ -18,8 +18,8 @@ const Loginpage = () => {
         <Image
           src={"/images/logo.png"}
           alt="logo"
-          width={100} // Width asli gambar (sesuai dimensi sebenarnya)
-          height={100} // Height asli gambar (sesuai dimensi sebenarnya)
+          width={100}
+          height={100}
           className="w-auto h-auto max-w-[80px] max-h-[80px] md:max-w-[100px] md:max-h-[100px] lg:max-w-[120px] lg:max-h-[120px]"
           priority
         />
@@ -111,7 +111,6 @@ const Loginpage = () => {
           </div>
         </div>
 
-        {/* Additional Links - Modified for mobile alignment */}
         <div className="flex flex-wrap justify-between w-full text-white mb-3 md:mb-4 gap-y-1">
           <span className="text-sm whitespace-nowrap">
             Belum Punya Akun?

@@ -1,5 +1,3 @@
-// moviesData.js
-
 const movies = [
   {
     id: 1,
